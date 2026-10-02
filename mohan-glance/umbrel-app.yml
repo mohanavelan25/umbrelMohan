@@ -5,7 +5,7 @@ tagline: A lightweight, highly customizable dashboard
 icon: https://cdn.jsdelivr.net/gh/selfhst/icons@main/png/jellyglance.png
 category: Dashboard
 version: "v0.8.6"
-port: 9000
+port: 8200
 description: >-
   A lightweight, highly customizable dashboard that displays
   your feeds in a beautiful, streamlined interface
