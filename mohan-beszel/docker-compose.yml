@@ -1,0 +1,26 @@
+version: "3.7"
+
+services:
+  app_proxy:
+    environment:
+      APP_HOST: mohan-beszel_web_1
+      APP_PORT: 8090
+      PROXY_AUTH_ADD: "false"
+
+  web:
+    image: henrygd/beszel:v0.20.0
+    restart: on-failure
+    volumes:
+      - ${APP_DATA_DIR}/data:/beszel_data
+      - ${APP_DATA_DIR}/socket:/beszel_socket
+
+  agent:
+    image: henrygd/beszel-agent:latest
+    restart: on-failure
+    volumes:
+      - ${APP_DATA_DIR}/agent_data:/var/lib/beszel-agent
+      - ${APP_DATA_DIR}/socket:/beszel_socket
+      - /var/run/docker.sock:/var/run/docker.sock:ro
+    environment:
+      LISTEN: /beszel_socket/beszel.sock
+      KEY: "PASTE-PUBLIC-KEY-HERE"

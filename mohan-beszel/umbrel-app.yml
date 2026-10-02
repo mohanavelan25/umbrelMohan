@@ -1,0 +1,39 @@
+manifestVersion: 1
+id: mohan-beszel
+category: Dashboard
+name: Beszel
+version: "v0.20.0"
+tagline: Lightweight server monitoring with history
+description: Beszel is a lightweight server monitoring hub with Docker container stats, historical charts and alerts.
+developer: henrygd
+website: https://beszel.dev
+dependencies: []
+repo: https://github.com/henrygd/beszel
+support: https://github.com/henrygd/beszel/issues
+port: 8090
+gallery:
+  - https://www.beszel.dev/image/home-dashboard.png
+  - https://www.beszel.dev/image/home-system.png
+  - https://www.beszel.dev/image/home-alerts.webp
+releaseNotes: >-
+  Add network monitoring from agents (#2266, #1911)
+  Add container image update available flag (#2211)
+  Add btrfs filesystem reporting as storage pools (#2315)
+  Add persistence of view preferences and language to user settings (#1831)
+  Add TRUSTED_PROXY_IPS allowlist for TRUSTED_AUTH_HEADER (#2327)
+  Add ZFS utilities to Intel and NVIDIA agent images (#2288, #2311)
+  Revert SMART warnings for certain attributes (#2296, #2308, #2347)
+  Improve NVMe data units display as human-readable GB/TB (#2303)
+  Fix agent disconnects during slow collections by extending WebSocket deadline (#2294)
+  Fix missing root CA certificates in base agent image (#2291)
+  Fix false RAID health warnings during healthy data scrubbing (#2109)
+  Fix ZFS monitoring when /dev/zfs is unavailable (#2325)
+  Fix spurious HUB_URL warning in SSH-only mode (#2316)
+  Fix idle GPU utilization display in systems table (#2312)
+  Fix session handling to clear auth store after token expiry (#2310)
+  Fix chart history handling when switching to live charts (#2333)
+path: ""
+defaultUsername: ""
+defaultPassword: ""
+submitter: mohan
+submission: https://github.com/henrygd/beszel
