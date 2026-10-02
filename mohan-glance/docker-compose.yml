@@ -1,9 +1,13 @@
+version: "3.7"
+
 services:
-  glance:
-    container_name: glance
-    image: glanceapp/glance:v0.8.6
-    restart: unless-stopped
+  app_proxy:
+    environment:
+      APP_HOST: mohan-glance_server_1
+      APP_PORT: 9000
+
+  server:
+    image: glanceapp/glance:latest
+    restart: on-failure
     volumes:
-      - ${APP_DATA_ROOT}/config:/app/config
-    ports:
-      - 9000:8080
+      - ${APP_DATA_DIR}/config:/app/config
