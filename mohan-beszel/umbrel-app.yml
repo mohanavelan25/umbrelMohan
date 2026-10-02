@@ -4,6 +4,7 @@ category: Dashboard
 name: Beszel
 version: "v0.20.0"
 tagline: Lightweight server monitoring with history
+icon: https://cdn.jsdelivr.net/gh/selfhst/icons@main/png/beszel.png
 description: Beszel is a lightweight server monitoring hub with Docker container stats, historical charts and alerts.
 developer: henrygd
 website: https://beszel.dev
