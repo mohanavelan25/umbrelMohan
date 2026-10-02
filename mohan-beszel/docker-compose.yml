@@ -15,7 +15,7 @@ services:
       - ${APP_DATA_DIR}/socket:/beszel_socket
 
   agent:
-    image: henrygd/beszel-agent:latest
+    image: henrygd/beszel-agent:v0.20.0
     restart: on-failure
     volumes:
       - ${APP_DATA_DIR}/agent_data:/var/lib/beszel-agent
