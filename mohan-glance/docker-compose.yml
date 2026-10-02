@@ -6,4 +6,4 @@ services:
     volumes:
       - ./config:/app/config
     ports:
-      - 9000:9000
+      - 9000:8080
