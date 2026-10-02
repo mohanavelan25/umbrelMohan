@@ -1,0 +1,28 @@
+manifestVersion: 1
+id: mohan-glance
+name: Glance
+tagline: A lightweight, highly customizable dashboard
+icon: https://cdn.jsdelivr.net/gh/selfhst/icons@main/png/jellyglance.png
+category: Dashboard
+version: "v0.8.6"
+port: 9000
+description: >-
+  A lightweight, highly customizable dashboard that displays
+  your feeds in a beautiful, streamlined interface
+
+developer: glanceapp
+website: https://github.com/glanceapp
+submitter: https://github.com/glanceapp
+submission: https://github.com/glanceapp
+repo: https://github.com/glanceapp
+support: https://github.com/glanceapp
+gallery:
+  - https://github.com/glanceapp/glance/blob/main/docs/images/readme-main-image.png
+  - https://github.com/glanceapp/glance/blob/main/docs/images/mobile-preview.png
+  - https://github.com/glanceapp/glance/blob/main/docs/images/themes-example.png
+releaseNotes: >-
+  Add what's new in the latest version of your app here.
+dependencies: []
+path: ""
+defaultUsername: ""
+defaultPassword: ""
