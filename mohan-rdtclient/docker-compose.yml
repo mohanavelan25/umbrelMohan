@@ -1,13 +1,19 @@
-version: "3.7"
+version: '3.7'
 
 services:
   app_proxy:
     environment:
-      APP_HOST: mohan-glance_server_1
-      APP_PORT: 8080
+      APP_HOST: rdtclient_server_1
+      APP_PORT: 6500
 
   server:
-    image: glanceapp/glance:latest
-    restart: on-failure
+    image: rogerfar/rdtclient:v2.0.142
+    container_name: rdtclient_server_1
+    restart: unless-stopped
+    environment:
+      - PUID=1000
+      - PGID=1000
+      - TZ=Asia/Kolkata
     volumes:
-      - ${APP_DATA_DIR}/config:/app/config
+      - ${APP_DATA_DIR}/data/db:/data/db
+      - ${APP_DATA_DIR}/data/downloads:/data/downloads
