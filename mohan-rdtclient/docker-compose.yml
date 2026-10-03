@@ -1,0 +1,13 @@
+version: "3.7"
+
+services:
+  app_proxy:
+    environment:
+      APP_HOST: mohan-glance_server_1
+      APP_PORT: 8080
+
+  server:
+    image: glanceapp/glance:latest
+    restart: on-failure
+    volumes:
+      - ${APP_DATA_DIR}/config:/app/config

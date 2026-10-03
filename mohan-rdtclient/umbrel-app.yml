@@ -1,0 +1,33 @@
+manifestVersion: 1
+id: mohan-rdtclient
+name: RDT Client
+tagline: Web interface to manage your torrents on Real-Debrid, AllDebrid, Premiumize, TorBox or DebridLink
+icon: https://cdn.jsdelivr.net/gh/selfhst/icons@main/png/real-debrid.png
+category: Downloader
+version: "v2.0.142"
+port: 6500
+description: >-
+  This is a web interface to manage your torrents on Real-Debrid, AllDebrid, Premiumize, TorBox or DebridLink. It supports the following features:
+  Add new torrents through magnets or files
+  Add usenet downloads through NZB files (TorBox and Premiumize only)
+  Download all files from Real-Debrid, AllDebrid, Premiumize or TorBox to your local machine automatically
+  Unpack all files when finished downloading
+  Implements a fake qBittorrent API so you can hook up other applications like Sonarr, Radarr or Couchpotato.
+  Built with Angular 21 and .NET 10
+
+developer: rogerfar
+website: https://github.com/rogerfar/rdt-client
+submitter: https://github.com/rogerfar/rdt-client
+submission: https://github.com/rogerfar/rdt-client
+repo: https://github.com/rogerfar/rdt-client
+support: https://github.com/rogerfar/rdt-client
+gallery:
+  - https://www.google.com/imgres?q=rdtclient&imgurl=https%3A%2F%2Fopengraph.githubassets.com%2F44be2017be2c10104a7ca46d2c776d1c6674c80e2d51e28a0516b7209c42fd6c%2Frogerfar%2Frdt-client&imgrefurl=https%3A%2F%2Fgithub.com%2Frogerfar%2Frdt-client%2Fblob%2Fmaster%2FREADME.md&docid=XWKscTmXFZLcFM&tbnid=pHYoJeh5xO6hxM&vet=12ahUKEwim_bartZ6XAxWWm-EIHXZ7ILQQnPAOegQISRAA..i&w=1200&h=600&hcb=2&ved=2ahUKEwim_bartZ6XAxWWm-EIHXZ7ILQQnPAOegQISRAA
+  - https://www.google.com/imgres?q=rdtclient&imgurl=https%3A%2F%2Fopengraph.githubassets.com%2F44be2017be2c10104a7ca46d2c776d1c6674c80e2d51e28a0516b7209c42fd6c%2Frogerfar%2Frdt-client&imgrefurl=https%3A%2F%2Fgithub.com%2Frogerfar%2Frdt-client%2Fblob%2Fmaster%2FREADME.md&docid=XWKscTmXFZLcFM&tbnid=pHYoJeh5xO6hxM&vet=12ahUKEwim_bartZ6XAxWWm-EIHXZ7ILQQnPAOegQISRAA..i&w=1200&h=600&hcb=2&ved=2ahUKEwim_bartZ6XAxWWm-EIHXZ7ILQQnPAOegQISRAA
+  - https://www.google.com/imgres?q=rdtclient&imgurl=https%3A%2F%2Fopengraph.githubassets.com%2F44be2017be2c10104a7ca46d2c776d1c6674c80e2d51e28a0516b7209c42fd6c%2Frogerfar%2Frdt-client&imgrefurl=https%3A%2F%2Fgithub.com%2Frogerfar%2Frdt-client%2Fblob%2Fmaster%2FREADME.md&docid=XWKscTmXFZLcFM&tbnid=pHYoJeh5xO6hxM&vet=12ahUKEwim_bartZ6XAxWWm-EIHXZ7ILQQnPAOegQISRAA..i&w=1200&h=600&hcb=2&ved=2ahUKEwim_bartZ6XAxWWm-EIHXZ7ILQQnPAOegQISRAA
+releaseNotes: >-
+  Add what's new in the latest version of your app here.
+dependencies: []
+path: ""
+defaultUsername: ""
+defaultPassword: ""
