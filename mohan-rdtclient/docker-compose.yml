@@ -7,7 +7,7 @@ services:
       APP_PORT: 6500
 
   server:
-    image: rogerfar/rdtclient:v2.0.142
+    image: rogerfar/rdtclient:latest
     container_name: rdtclient_server_1
     restart: unless-stopped
     environment:
